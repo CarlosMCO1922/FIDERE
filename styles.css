@@ -610,17 +610,6 @@ body {
     flex-direction: column;
     gap: 1rem;
     flex-shrink: 0;
-    position: relative;
-}
-
-.org-chart__sub::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -2.5rem;
-    right: -2.5rem;
-    height: 2px;
-    border-top: 2px dashed var(--border-color);
 }
 
 .org-chart__sub strong {
