@@ -613,6 +613,11 @@ body {
     flex-shrink: 0;
 }
 
+/* Ajuste específico para o card Financeiro (3º card) que tem 3 items */
+.org-chart__departments .org-chart__node:nth-child(3) .org-chart__sub {
+    padding-top: 1.5rem;
+}
+
 .org-chart__sub strong {
     display: block;
     color: var(--primary-color);
