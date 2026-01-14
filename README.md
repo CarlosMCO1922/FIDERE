@@ -29,6 +29,53 @@ Site institucional da Fidere Condomínios, Lda. desenvolvido em HTML, CSS e Java
    - Clique em "Save"
    - O site estará disponível em: `https://SEU_USUARIO.github.io/fidere-website/`
 
+## 🌐 Domínio Personalizado (Opcional)
+
+Se quiser usar um domínio personalizado (ex: `fidere.pt`):
+
+### ⚠️ IMPORTANTE: Regras de Domínios
+- **NÃO use underscores (`_`)** - Domínios só podem conter letras, números e hífens (`-`)
+- Exemplos válidos: `fidere.pt`, `fidere-lda.com`
+- Exemplos inválidos: `fidere_lda.com` ❌
+
+### Configuração
+
+1. **No GitHub (Settings > Pages)**
+   - Adicione o seu domínio válido no campo "Custom domain"
+   - Clique em "Save"
+   - O GitHub criará automaticamente um ficheiro `CNAME` no repositório
+
+2. **Configure o DNS no seu registador de domínio**
+   
+   **Opção A: Usar registos A (recomendado para domínios raiz)**
+   ```
+   Tipo: A
+   Nome: @
+   Valor: 185.199.108.153
+   TTL: 3600
+   
+   (Repita para os outros IPs: 185.199.109.153, 185.199.110.153, 185.199.111.153)
+   ```
+   
+   **Opção B: Usar CNAME (recomendado para subdomínios)**
+   ```
+   Tipo: CNAME
+   Nome: www (ou o subdomínio desejado)
+   Valor: carlosmco1922.github.io
+   TTL: 3600
+   ```
+
+3. **Aguarde a propagação DNS** (pode demorar até 48 horas)
+
+4. **Ative HTTPS** (disponível após a configuração DNS estar correta)
+   - Nas Settings > Pages, marque "Enforce HTTPS"
+
+### Resolver Problemas
+
+- **"DNS check unsuccessful"**: Verifique se os registos DNS estão corretos
+- **"Invalid characters"**: Certifique-se de que o domínio não contém underscores
+- **HTTPS não disponível**: Aguarde a propagação DNS completa
+
 ## 📁 Estrutura de Ficheiros
 
 ```
